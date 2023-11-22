@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "I9ROiKku+gXF9ZQzFQY+X1dnyWLfKfOIyjLIOfem2fEyjEeAx4Rz3shSlviC+JwnxSe6d+WSMBxYO+Cts2rOkA==",
+  "success": true,
+  "projectFilePath": "D:\\Facool Coisas\\Trabalhos\\ProjetoAplicadoII\\AppDeEntregas\\AppDeEntregas\\AppDeEntregas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Luan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Luan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Luan\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Luan\\.nuget\\packages\\xamarin.essentials\\1.8.0\\xamarin.essentials.1.8.0.nupkg.sha512",
+    "C:\\Users\\Luan\\.nuget\\packages\\xamarin.forms\\5.0.0.2622\\xamarin.forms.5.0.0.2622.nupkg.sha512"
+  ],
+  "logs": []
+}
