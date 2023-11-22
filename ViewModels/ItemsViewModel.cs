@@ -8,19 +8,19 @@ using Xamarin.Forms;
 
 namespace AppDeEntregas.ViewModels {
     public class ItemsViewModel : BaseViewModel {
-        private Item _selectedItem;
+        private Request _selectedItem;
 
-        public ObservableCollection<Item> Items { get; }
+        public ObservableCollection<Request> Items { get; }
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
-        public Command<Item> ItemTapped { get; }
+        public Command<Request> ItemTapped { get; }
 
         public ItemsViewModel() {
             Title = "Browse";
-            Items = new ObservableCollection<Item>();
+            Items = new ObservableCollection<Request>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
-            ItemTapped = new Command<Item>(OnItemSelected);
+            ItemTapped = new Command<Request>(OnItemSelected);
 
             AddItemCommand = new Command(OnAddItem);
         }
@@ -48,7 +48,7 @@ namespace AppDeEntregas.ViewModels {
             SelectedItem = null;
         }
 
-        public Item SelectedItem {
+        public Request SelectedItem {
             get => _selectedItem;
             set {
                 SetProperty(ref _selectedItem, value);
@@ -60,7 +60,7 @@ namespace AppDeEntregas.ViewModels {
             await Shell.Current.GoToAsync(nameof(RequestPage));
         }
 
-        async void OnItemSelected(Item item) {
+        async void OnItemSelected(Request item) {
             if (item == null)
                 return;
 

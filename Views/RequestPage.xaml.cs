@@ -8,7 +8,7 @@ using Xamarin.Forms.Xaml;
 
 namespace AppDeEntregas.Views {
     public partial class RequestPage : ContentPage {
-        public Item Item { get; set; }
+        public Request Item { get; set; }
 
         public RequestPage() {
             InitializeComponent();

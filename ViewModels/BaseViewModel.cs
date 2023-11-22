@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace AppDeEntregas.ViewModels {
     public class BaseViewModel : INotifyPropertyChanged {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public IDataStore<Request> DataStore => DependencyService.Get<IDataStore<Request>>();
 
         bool isBusy = false;
         public bool IsBusy {

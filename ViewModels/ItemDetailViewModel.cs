@@ -8,18 +8,18 @@ namespace AppDeEntregas.ViewModels {
     [QueryProperty(nameof(ItemId), nameof(ItemId))]
     public class ItemDetailViewModel : BaseViewModel {
         private string itemId;
-        private string text;
-        private string description;
+        private string height;
+        private string arrivalAdress;
         public string Id { get; set; }
 
-        public string Text {
-            get => text;
-            set => SetProperty(ref text, value);
+        public string Height {
+            get => height;
+            set => SetProperty(ref height, value);
         }
 
-        public string Description {
-            get => description;
-            set => SetProperty(ref description, value);
+        public string ArrivalAdress {
+            get => arrivalAdress;
+            set => SetProperty(ref arrivalAdress, value);
         }
 
         public string ItemId {
@@ -36,8 +36,8 @@ namespace AppDeEntregas.ViewModels {
             try {
                 var item = await DataStore.GetItemAsync(itemId);
                 Id = item.Id;
-                Text = item.Text;
-                Description = item.Description;
+                Height = item.Height;
+                ArrivalAdress = item.ArrivalAdress;
             }
             catch (Exception) {
                 Debug.WriteLine("Failed to Load Item");
