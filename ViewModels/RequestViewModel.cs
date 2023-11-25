@@ -8,7 +8,8 @@ using Xamarin.Forms;
 namespace AppDeEntregas.ViewModels {
     public class RequestViewModel : BaseViewModel {
         private string height;
-        private string arrivalAdress;
+        private string arrivalAddress;
+        private string departureAddress;
 
         public RequestViewModel() {
             SaveCommand = new Command(OnSave, ValidateSave);
@@ -19,7 +20,8 @@ namespace AppDeEntregas.ViewModels {
 
         private bool ValidateSave() {
             return !String.IsNullOrWhiteSpace(height)
-                && !String.IsNullOrWhiteSpace(arrivalAdress);
+                && !String.IsNullOrWhiteSpace(arrivalAddress)
+                && !String.IsNullOrWhiteSpace(departureAddress);
         }
 
         public string Height {
@@ -27,9 +29,13 @@ namespace AppDeEntregas.ViewModels {
             set => SetProperty(ref height, value);
         }
 
-        public string ArrivalAdress {
-            get => arrivalAdress;
-            set => SetProperty(ref arrivalAdress, value);
+        public string ArrivalAddress {
+            get => arrivalAddress;
+            set => SetProperty(ref arrivalAddress, value);
+        }
+        public string DepartureAddress {
+            get => departureAddress;
+            set => SetProperty(ref departureAddress, value);
         }
 
         public Command SaveCommand { get; }
@@ -44,7 +50,8 @@ namespace AppDeEntregas.ViewModels {
             Request newItem = new Request() {
                 Id = Guid.NewGuid().ToString(),
                 Height = "Peso: "+ height + "Kg",
-                ArrivalAdress = "Endereço: " + arrivalAdress
+                DepartureAddress = "Endereço de Saída: " + DepartureAddress,
+                ArrivalAddress = "Endereço de Entrega: " + ArrivalAddress
             };
 
             await DataStore.AddItemAsync(newItem);

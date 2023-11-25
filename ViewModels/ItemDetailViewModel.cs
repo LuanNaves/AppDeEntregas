@@ -37,7 +37,7 @@ namespace AppDeEntregas.ViewModels {
                 var item = await DataStore.GetItemAsync(itemId);
                 Id = item.Id;
                 Height = item.Height;
-                ArrivalAdress = item.ArrivalAdress;
+                ArrivalAdress = item.ArrivalAddress;
             }
             catch (Exception) {
                 Debug.WriteLine("Failed to Load Item");

@@ -18,3 +18,4 @@ D:\Facool Coisas\Trabalhos\ProjetoAplicadoII\AppDeEntregas\AppDeEntregas\obj\Deb
 D:\Facool Coisas\Trabalhos\ProjetoAplicadoII\AppDeEntregas\AppDeEntregas\obj\Debug\netstandard2.0\ref\AppDeEntregas.dll
 D:\Facool Coisas\Trabalhos\ProjetoAplicadoII\AppDeEntregas\AppDeEntregas\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
 D:\Facool Coisas\Trabalhos\ProjetoAplicadoII\AppDeEntregas\AppDeEntregas\obj\Debug\netstandard2.0\Views\RequestPage.xaml.g.cs
+D:\Facool Coisas\Trabalhos\ProjetoAplicadoII\AppDeEntregas\AppDeEntregas\obj\Debug\netstandard2.0\Views\MapPage.xaml.g.cs
