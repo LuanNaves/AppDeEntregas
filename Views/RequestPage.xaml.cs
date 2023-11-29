@@ -14,5 +14,10 @@ namespace AppDeEntregas.Views {
             InitializeComponent();
             BindingContext = new RequestViewModel();
         }
+
+        private void ShowShippingValue(object sender, EventArgs e) {
+            DisplayAlert("Solicitação Concluída", "Acesse suas solicitações para conferir o valor do frete", "Ok");
+
+        }
     }
 }

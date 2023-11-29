@@ -11,10 +11,9 @@ namespace AppDeEntregas.Services {
         public MockDataStore() {
             items = new List<Request>();
         }
-
+        
         public async Task<bool> AddItemAsync(Request item) {
             items.Add(item);
-
             return await Task.FromResult(true);
         }
 

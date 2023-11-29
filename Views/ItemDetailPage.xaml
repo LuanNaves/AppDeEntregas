@@ -2,13 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppDeEntregas.Views.ItemDetailPage"
-             Title="{Binding Title}">
+             Title="Detalhes da Entrega" 
+             xmlns:local="clr-namespace:AppDeEntregas.ViewModels"  
+             xmlns:model="clr-namespace:AppDeEntregas.Models"  
+             x:Name="BrowseItemsPage">
 
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Text}" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Description}" FontSize="Small"/>
+        <Label Text="{Binding Height}" TextColor="Black" FontSize="Small"/>
+        <Label Text="{Binding DepartureAddress}" TextColor="Black" FontSize="Small"/>
+        <Label Text="{Binding ArrivalAddress}" TextColor="Black" FontSize="Small"/>
+        <Label Text="{Binding Distance}" TextColor="Black" FontSize="Small"/>
+        <Label Text="{Binding TravelTime}" TextColor="Black" FontSize="Small"/>
+        <Label Text="{Binding ShippingValue}" TextColor="Black" FontSize="Small"/>
     </StackLayout>
-    
+
+
 </ContentPage>

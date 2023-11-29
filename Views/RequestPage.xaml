@@ -20,9 +20,16 @@
             <Editor Text="{Binding DepartureAddress, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" BackgroundColor="AliceBlue" TextColor="Black" Margin="0" />
             <Label Text="Endereço de Entrega" FontSize="Medium" TextColor="Black"/>
             <Editor Text="{Binding ArrivalAddress, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" BackgroundColor="AliceBlue" TextColor="Black" Margin="0" />
+            <Label Text="Distância (Km)" FontSize="Medium" TextColor="Black"/>
+            <Editor Text="{Binding Distance, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" BackgroundColor="AliceBlue" TextColor="Black" Margin="0" />
+            <Label Text="Tempo de Deslocamento (Min)" FontSize="Medium" TextColor="Black"/>
+            <Editor Text="{Binding TravelTime, Mode=TwoWay}" AutoSize="TextChanges"  FontSize="Medium" BackgroundColor="AliceBlue" TextColor="Black" Margin="0" />
+            <!--<Label Text="Valor do Frete:" FontSize="Medium" TextColor="Black"/>
+            <Editor Text="{Binding ShippingValue, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" BackgroundColor="AliceBlue" TextColor="Black" Margin="0" IsReadOnly="True"/>-->
+
             <StackLayout Orientation="Horizontal">
                 <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
-                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Save" Command="{Binding SaveCommand}" Clicked="ShowShippingValue" HorizontalOptions="FillAndExpand"></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
